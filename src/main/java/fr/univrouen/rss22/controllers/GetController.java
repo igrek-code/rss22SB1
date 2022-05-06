@@ -27,11 +27,11 @@ public class GetController {
         return itemRepository.findAllResumeBy();
     }
 
-    @GetMapping(value = "resume/html/{guid}")
+    @GetMapping(value = "resume/html")
     public String
-    resumeHtmlPage(@PathVariable(value = "guid") long guid, Model model) throws Exception {
-        Item item = itemRepository.findById(guid).orElseThrow(() -> new Exception("Invalid item Id:" + guid));
-        model.addAttribute("item", item);
+    resumeHtmlPage(Model model) throws Exception {
+        List<ItemResume> items =  itemRepository.findAllResumeBy();
+        model.addAttribute("items", items);
         return "itemResume";
     }
 
@@ -46,7 +46,7 @@ public class GetController {
         }
     }
 
-    @GetMapping(value = "resume/{guid}")
+    @GetMapping(value = "html/{guid}")
     public String
     completeHtmlPage(@PathVariable(value = "guid") long guid, Model model) throws Exception {
         try {

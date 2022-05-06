@@ -1,0 +1,313 @@
+{
+	"info": {
+		"_postman_id": "4203d1b0-b46a-4b78-8dc3-14fc3755f2fb",
+		"name": "RSS22_BOUYAKOUB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get page accueil",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "bouyakoub-rss22sb1.cleverapps.io/",
+					"host": [
+						"bouyakoub-rss22sb1",
+						"cleverapps",
+						"io"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get help page",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "bouyakoub-rss22sb1.cleverapps.io/help",
+					"host": [
+						"bouyakoub-rss22sb1",
+						"cleverapps",
+						"io"
+					],
+					"path": [
+						"help"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post new item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<item>\n    <title>title</title>\n    <category term=\"\"/>\n    <published>2001-12-31T12:00:00</published>\n    <content type=\"text\">content</content>\n    <author>\n      <name>name</name>\n    </author>\n</item>\n",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "bouyakoub-rss22sb1.cleverapps.io/rss22/insert",
+					"host": [
+						"bouyakoub-rss22sb1",
+						"cleverapps",
+						"io"
+					],
+					"path": [
+						"rss22",
+						"insert"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post existing item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<item>\n    <title>title</title>\n    <category term=\"\"/>\n    <published>2001-12-31T12:00:00</published>\n    <content type=\"text\">content</content>\n    <author>\n      <name>name</name>\n    </author>\n</item>\n",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "bouyakoub-rss22sb1.cleverapps.io/rss22/insert",
+					"host": [
+						"bouyakoub-rss22sb1",
+						"cleverapps",
+						"io"
+					],
+					"path": [
+						"rss22",
+						"insert"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get resume list article xml",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "bouyakoub-rss22sb1.cleverapps.io/rss22/resume/xml",
+					"host": [
+						"bouyakoub-rss22sb1",
+						"cleverapps",
+						"io"
+					],
+					"path": [
+						"rss22",
+						"resume",
+						"xml"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get resume liste article html",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "bouyakoub-rss22sb1.cleverapps.io/rss22/resume/html",
+					"host": [
+						"bouyakoub-rss22sb1",
+						"cleverapps",
+						"io"
+					],
+					"path": [
+						"rss22",
+						"resume",
+						"html"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get complete existing article xml by guid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "bouyakoub-rss22sb1.cleverapps.io/rss22/resume/xml/1",
+					"host": [
+						"bouyakoub-rss22sb1",
+						"cleverapps",
+						"io"
+					],
+					"path": [
+						"rss22",
+						"resume",
+						"xml",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get complete non existing article by guid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "bouyakoub-rss22sb1.cleverapps.io/rss22/resume/xml/2",
+					"host": [
+						"bouyakoub-rss22sb1",
+						"cleverapps",
+						"io"
+					],
+					"path": [
+						"rss22",
+						"resume",
+						"xml",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get complete existing article html",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "bouyakoub-rss22sb1.cleverapps.io/rss22/html/1",
+					"host": [
+						"bouyakoub-rss22sb1",
+						"cleverapps",
+						"io"
+					],
+					"path": [
+						"rss22",
+						"html",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get complete non existing article html",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "bouyakoub-rss22sb1.cleverapps.io/rss22/html/2",
+					"host": [
+						"bouyakoub-rss22sb1",
+						"cleverapps",
+						"io"
+					],
+					"path": [
+						"rss22",
+						"html",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete existing article",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "bouyakoub-rss22sb1.cleverapps.io/rss22/delete/1",
+					"host": [
+						"bouyakoub-rss22sb1",
+						"cleverapps",
+						"io"
+					],
+					"path": [
+						"rss22",
+						"delete",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete non existing article",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "bouyakoub-rss22sb1.cleverapps.io/rss22/delete/2",
+					"host": [
+						"bouyakoub-rss22sb1",
+						"cleverapps",
+						"io"
+					],
+					"path": [
+						"rss22",
+						"delete",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": ""
+		}
+	]
+}

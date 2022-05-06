@@ -1,0 +1,10 @@
+<item>
+    <guid>guid</guid>
+    <title>title</title>
+    <category term=""/>
+    <published>2001-12-31T12:00:00</published>
+    <content type="text">content</content>
+    <author>
+      <name>name</name>
+    </author>
+  </item>

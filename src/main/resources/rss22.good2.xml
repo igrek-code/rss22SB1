@@ -1,0 +1,20 @@
+<item>
+    <guid>guid</guid>
+    <title>title</title>
+    <category term="1"/>
+    <category term="2"/>
+    <category term="3"/>
+    <published>2001-12-31T12:00:00</published>
+    <image alt="" href="" length="0" type="GIF"/>
+    <content href="" type="text">content</content>
+    <author>
+      <name>name</name>
+      <email>email</email>
+      <uri>uri</uri>
+    </author>
+    <author>
+      <name>name2</name>
+      <email>email2</email>
+      <uri>uri2</uri>
+    </author>
+  </item>
