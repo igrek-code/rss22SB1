@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Item Resume</h1>
+<table>
+    <thead>
+    <tr>
+        <th>GUID</th>
+        <th>TITLE</th>
+        <th>DATE</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td> <span th:text="${item.guid}">aaa</span> </td>
+            <td><span th:text="${item.title}">aaa</span> </td>
+            <td><span th:text="${item.date}">aaa</span></td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>

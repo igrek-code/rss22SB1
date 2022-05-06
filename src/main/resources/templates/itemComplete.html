@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Item Complete</title>
+</head>
+<body>
+<h1>Item Complete</h1>
+<h2><span th:text="${item.title}">aaa</span></h2>
+<p>(guid=<span th:text="${item.guid}">aaa</span>)</p>
+<p>Catégorie(s) :
+<th:block th:each="categorie:${categories}">
+    <span th:text="${categorie.term}">vvv</span>
+</th:block>
+</p>
+<p>Publié le <span th:text="${item.date}">aaa</span></p>
+<p><span th:text="${item.content}">aaa</span></p>
+<p>Auteur(s) :
+    <th:block th:each="author:${authors}">
+        <span th:utext="${author.name}">vvv</span>
+    </th:block>
+</p>
+</body>
+</html>
