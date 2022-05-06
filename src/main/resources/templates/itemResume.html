@@ -14,12 +14,15 @@
         <th>DATE</th>
     </tr>
     </thead>
+
     <tbody>
+    <th:block th:each="item:${items}">
         <tr>
-            <td> <span th:text="${item.guid}">aaa</span> </td>
-            <td><span th:text="${item.title}">aaa</span> </td>
+            <td><span th:text="${item.guid}">aaa</span></td>
+            <td><span th:text="${item.title}">aaa</span></td>
             <td><span th:text="${item.date}">aaa</span></td>
         </tr>
+    </th:block>
     </tbody>
 </table>
 </body>
